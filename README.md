@@ -75,6 +75,8 @@ Em cada iteração algoritmo é representado pelos seguintes passos:
 
     Exemplo de matriz de saída com o caminho marcado:
     
+      ![image](https://user-images.githubusercontent.com/64996505/226490194-b64609a6-e780-431a-92ab-70a339d192f7.png)
+
 
 ## Compilação e Execução
 
