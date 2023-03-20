@@ -44,7 +44,7 @@ O algoritmo é executado dentro de dois loops: um loop de leitura que faz itera�
 Em cada iteração algoritmo é representado pelos seguintes passos:
 
   Loop externo(leitura):
-  * Leitura do arquivo para atribuição da matriz atual;
+  * Leitura do arquivo para atribuição da matriz da iteração corrente;
 
     Loop interno (operações com cada matriz):
 
