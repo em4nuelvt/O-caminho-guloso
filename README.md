@@ -11,7 +11,7 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 
   4. A partir da primeira matriz, você tem como regras: 
      * avançar para a próxima coluna; 
-     * retroceder para coluna anterior; 
+     * retroceder para coluna anterior;         
      *  saltar para a linha de   baixo; 
      * ir em diagonal para baixo. Todas  essas regras só se aplicam se a casa (posição i,j da matriz) ainda não tenha sido descoberta ou já           processada. 
 
