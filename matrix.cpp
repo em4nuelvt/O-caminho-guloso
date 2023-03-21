@@ -105,13 +105,13 @@ void moveLeft(int **matrix, short int *i, short int *j, int *acm) {
   *acm= *acm +matrix[*i][*j];
   matrix[*i][*j]=-1;
   *j = *j - 1;
-  cout << "posição: " << matrix[*i][*j] << endl;
+  cout << "posição " <<"("<<*i<<","<<*j<<")"<<": "<< matrix[*i][*j] << endl;
 }
 void moveRight(int **matrix, short int *i, short int *j, int *acm) {
   *acm= *acm +matrix[*i][*j];
   matrix[*i][*j]=-1;
   *j = *j + 1;
-  cout << "posição: " << matrix[*i][*j] << endl;
+  cout << "posição " <<"("<<*i<<","<<*j<<")"<<": "<< matrix[*i][*j] << endl;
 
 
 }
@@ -120,21 +120,21 @@ void moveRightDiagonal(int **matrix, short int *i, short int *j, int *acm) {
   matrix[*i][*j]=-1;
   *i = *i + 1;
   *j = *j + 1;
-  cout << "posição: " << matrix[*i][*j] << endl;
+  cout << "posição "<<"("<<*i<<","<<*j<<")"<<": " << matrix[*i][*j] << endl;
 }
 void moveLeftDiagonal(int **matrix, short int *i, short int *j, int *acm) {
   *acm= *acm +matrix[*i][*j];
   matrix[*i][*j]=-1;
   *i = *i + 1;
   *j = *j - 1;
-  cout << "posição: " << matrix[*i][*j] << endl;
+  cout << "posição "<<"("<<*i<<","<<*j<<")"<<": " << matrix[*i][*j] << endl;
 
 }
 void moveDown(int **matrix, short int *i, short int *j, int *acm) {
   *acm= *acm +matrix[*i][*j];
   matrix[*i][*j]=-1;
   *i = *i + 1;
-  cout << "posição: " << matrix[*i][*j] << endl;
+  cout << "posição "<<"("<<*i<<","<<*j<<")"<<": "  << matrix[*i][*j] << endl;
 }
 void printMatrix(int**matrix, short int rows, short int cols){
   for (int i = 0; i < rows; i++) {

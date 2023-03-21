@@ -46,10 +46,9 @@ int main() { // declaração de variáveis
       if(contMatrix>1){
         x=0,y=0;
       }
-      cout << "posição inicial : " << matrix[x][y] << endl;
+      cout << "posição inicial"<<"("<<x<<","<<y<<")"<<": " << matrix[x][y] << endl;
       while(!(y==cols-1&&x==rows-1)){
         decisaoDesaida(matrix, &x, &y, rows, cols,&acm);
-        cout<<x<<","<<y<<endl;
       }
       acm=acm+ matrix[x][y]; //soma o valor da ultima posição
       cout<<"soma com a matriz " <<contMatrix<<": "<<acm<<endl<<endl;
