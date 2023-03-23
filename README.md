@@ -84,7 +84,7 @@ Em cada iteração algoritmo é representado pelos seguintes passos:
 
 * Para verificar a solução do algoritmo segue um caso de teste para exemplificação do funcionamento. 
 
-A seguinte matriz foi utilizada como entrada:
+  A seguinte matriz foi utilizada como entrada:
 
   ![image](https://user-images.githubusercontent.com/64996505/227378383-dfb76215-4973-4e59-804f-84a76f11e852.png)
 
