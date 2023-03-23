@@ -92,6 +92,11 @@ A estrutura árvore disponibilizada possui um arquivo Makefile que realiza todo 
 |  `make run`            | Executa o programa da pasta build após a realização da compilação                                 |
 
 Os testes de execução foram gerados aleatoriamente, partindo do código que gerou o arquivo "input.data" presente no repositório do projeto.
-    
+
+![image](https://user-images.githubusercontent.com/64996505/227378383-dfb76215-4973-4e59-804f-84a76f11e852.png)
+![image](https://user-images.githubusercontent.com/64996505/227378029-b2911f69-5ee4-499f-896f-615a51cde4b4.png)
+![image](https://user-images.githubusercontent.com/64996505/227378167-8bb2a2bd-56ac-4d28-a43f-23f23798daef.png)
+![image](https://user-images.githubusercontent.com/64996505/227378252-d4614bc9-36bc-426a-b4e8-daf6e539048e.png)
+
 
 
