@@ -80,6 +80,28 @@ Em cada iteração algoritmo é representado pelos seguintes passos:
       ![image](https://user-images.githubusercontent.com/64996505/226490194-b64609a6-e780-431a-92ab-70a339d192f7.png)
 
 
+## Teste
+
+* Para verificar a solução do algoritmo segue um caso de teste para exemplificação do funcionamento. 
+A seguinte matriz foi utilizada como entrada:
+
+  ![image](https://user-images.githubusercontent.com/64996505/227378383-dfb76215-4973-4e59-804f-84a76f11e852.png)
+
+* A posição inicial (linha,coluna) definida para matriz foi a posição (1,2).
+
+  ![image](https://user-images.githubusercontent.com/64996505/227378029-b2911f69-5ee4-499f-896f-615a51cde4b4.png)
+
+* A cada iteração, a posição corrente é impressa com o seu valor e, ao fim do laço,a soma dos valores de cada posição do caminho também é impresso, como na imagem:
+
+  ![image](https://user-images.githubusercontent.com/64996505/227378167-8bb2a2bd-56ac-4d28-a43f-23f23798daef.png)
+
+* Somando os valores das posições (253+762+903+707+564+545+814+806+193+509+893+263) o resultado obtido é 7212, exatamente o valor mostrado na execução do teste.
+
+* Em seguida a matriz é impressa com o caminho percorrido:
+
+  ![image](https://user-images.githubusercontent.com/64996505/227378252-d4614bc9-36bc-426a-b4e8-daf6e539048e.png)
+
+
 ## Compilação e Execução
 
 A estrutura árvore disponibilizada possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
@@ -93,10 +115,9 @@ A estrutura árvore disponibilizada possui um arquivo Makefile que realiza todo 
 
 Os testes de execução foram gerados aleatoriamente, partindo do código que gerou o arquivo "input.data" presente no repositório do projeto.
 
-![image](https://user-images.githubusercontent.com/64996505/227378383-dfb76215-4973-4e59-804f-84a76f11e852.png)
-![image](https://user-images.githubusercontent.com/64996505/227378029-b2911f69-5ee4-499f-896f-615a51cde4b4.png)
-![image](https://user-images.githubusercontent.com/64996505/227378167-8bb2a2bd-56ac-4d28-a43f-23f23798daef.png)
-![image](https://user-images.githubusercontent.com/64996505/227378252-d4614bc9-36bc-426a-b4e8-daf6e539048e.png)
+
+
+
 
 
 
