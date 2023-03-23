@@ -32,6 +32,8 @@ Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar p
 
      ![image](https://user-images.githubusercontent.com/64996505/226121191-c0277b02-4034-4c2d-a01b-0a440e3e4904.png)
 
+Observação: nesse exemplo há somente duas matrizes. Entretanto, o número de matrizes do arquivo de teste não é fixo, pode ser somente uma ou até mesmo milhares.
+
 ## Implementação
 A solução foi implementada em C++ e segue os seguintes passos:
 
