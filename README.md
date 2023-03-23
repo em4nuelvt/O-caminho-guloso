@@ -21,7 +21,7 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 
 
 ## Visão Geral
-Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritimo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a seguinte. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes.
+Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritimo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a seguinte. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes. Portanto, para as matrizes do problema em questão, voltar linhas da matriz, que seria equivalente a "andar para trás" não é uma opção viável.
 
 ## Entrada
 * Durante a execução, deve ser informado qual a posição inicial na primeira matriz ([linha][coluna]) .
