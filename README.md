@@ -52,7 +52,7 @@ Em cada iteração algoritmo é representado pelos seguintes passos:
 
     * Determinar se a posição da iteração atual se encaixa em algum dos casos especiais:
       * Primeira coluna: não pode andar para esquerda, nem para diagonal esquerda;
-      * Ultima coluna: nao pode andar para direita, nem para diagonal direita;
+      * Ultima coluna: não pode andar para direita, nem para diagonal direita;
       * Ultima linha: único movimento possível é direita.
        
     * Verificar os movimentos possíveis e definir o próximo passo com uma função de decisão que compara o valor a posição atual e redireciona para um dos seguintes movimentos:
