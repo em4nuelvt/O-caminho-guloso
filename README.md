@@ -73,7 +73,7 @@ Em cada iteração algoritmo é representado pelos seguintes passos:
     Vale ressaltar que em situações nas quais  o algoritmo encontra posições de mesmo valor para seguir um caminho, a prioridade é sempre prosseguir em linhas e colunas, dessa forma a prioridade de movimentação é: diagonal inferior direita; direita; baixo; diagonal inferior esquerda; esquerda.
 
 
-    Exemplo de matriz de saída com o caminho marcado:
+    Exemplo de matriz de saída com o caminho marcado ao fim do loop:
     
       ![image](https://user-images.githubusercontent.com/64996505/226490194-b64609a6-e780-431a-92ab-70a339d192f7.png)
 
