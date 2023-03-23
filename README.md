@@ -23,6 +23,18 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 ## Visão Geral
 Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritimo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a seguinte. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes. Portanto, para as matrizes do problema em questão, voltar linhas da matriz, que seria equivalente a "andar para trás" não é uma opção viável.
 
+A cada posição de uma matriz, o caminhamento segue um dos casos de movimentação de acordo com a posição que a iteração se encontra:
+
+* Meio da matriz: pode seguir em todas as direções, exceto voltar linhas.
+* Primeira Coluna: segue somente para direita, para baixo ou para a diagonal inferior direita.
+* Última coluna: segue somente para esquerda, para baixo ou para a diagonal inferior esquerda.
+* Última linha: segue à direita.
+
+  ![image](https://user-images.githubusercontent.com/64996505/227387333-1b32197a-115b-441b-aa65-f954d9806daf.png)
+  ![image](https://user-images.githubusercontent.com/64996505/227387536-5af73f84-7716-4657-82c0-4403403f4749.png)
+  ![image](https://user-images.githubusercontent.com/64996505/227387749-57fd15cd-1c59-4e47-8fa2-a67ca6d457c9.png)
+  ![image](https://user-images.githubusercontent.com/64996505/227387879-2047c707-0767-4d73-9df5-e1cf49eb5f52.png)
+
 ## Entrada
 * Durante a execução, deve ser informado qual a posição inicial na primeira matriz ([linha][coluna]) .
 * A entrada principal do código consiste em um arquivo que apresenta matrizes com valores inteiros separados por espaços e a dimensão padrão delas. Esse arquivo apresenta um formato específico, mas com valores aleatórios, gerados por um algoritmo disponibilizado pelo professor.
@@ -117,10 +129,7 @@ A estrutura árvore disponibilizada possui um arquivo Makefile que realiza todo 
 Os testes de execução foram gerados aleatoriamente, partindo do código que gerou o arquivo "input.data" presente no repositório do projeto.
 
 
-![image](https://user-images.githubusercontent.com/64996505/227387333-1b32197a-115b-441b-aa65-f954d9806daf.png)
-![image](https://user-images.githubusercontent.com/64996505/227387536-5af73f84-7716-4657-82c0-4403403f4749.png)
-![image](https://user-images.githubusercontent.com/64996505/227387749-57fd15cd-1c59-4e47-8fa2-a67ca6d457c9.png)
-![image](https://user-images.githubusercontent.com/64996505/227387879-2047c707-0767-4d73-9df5-e1cf49eb5f52.png)
+
 
 
 
