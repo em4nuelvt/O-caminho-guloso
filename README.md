@@ -5,7 +5,7 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 
   1. Criar um sistema que leia K matrizes quadradas no tamanho NxN.
   
-  2. Seu programa deve enumerá-las, de forma a deixa-las organizadas para processamento. 
+  2. O programa deve enumerá-las, de forma a deixa-las organizadas para processamento. 
 
   3. Partindo da primeira matriz, você deve iniciar de um ponto preestabelecido, esse pode ser fornecido pelo usuário ou estar contido em arquivos extras de   configuração. Não é permitido definir diretamente no código. 
 
