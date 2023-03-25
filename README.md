@@ -47,7 +47,7 @@ A cada posição de uma matriz, o caminhamento segue um dos casos de movimentaç
 Observação: nesse exemplo há somente duas matrizes. Entretanto, o número de matrizes do arquivo de teste não é fixo, pode ser somente uma ou até mesmo milhares.
 
 ## Implementação
-A solução foi implementada em C++ e segue os seguintes passos:
+A solução foi implementada em C++, dividida nos arquivos matrix.hpp (declaração das funções), matrix.cpp(definição das funções) e main.cpp (execução do algoritmo), seguindo os seguintes passos de implementação:
 
 Como o número de matrizes não é estipulado e as dimensões são variáveis, cada matriz lida do arquivo é armazenada temporariamente em uma matriz de números inteiros alocada dinamicamente usando a função malloc(). A dimensão das matrizes está contida na primeira linha do arquivo *input.data*, portanto o espaço de memória alocado depende desse valor que é armazenado nas variáveis: *rows* e *cols*. A leitura é feita a partir de um objeto ifstream importado da biblioteca fstream.
 
