@@ -21,11 +21,11 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 
 
 ## Visão Geral
-Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritmo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a seguinte. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes. Portanto, para as matrizes do problema em questão, voltar linhas da matriz, que seria equivalente a "andar para trás" não é uma opção viável.
+Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritmo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a próxima. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes na posição final da matriz [n-1][n-1]. Portanto, para as matrizes do problema em questão, voltar linhas, que seria equivalente a "andar para trás", não é uma opção viável.
 
 A cada posição de uma matriz, o caminhamento segue um dos casos de movimentação de acordo com a posição que a iteração se encontra:
 
-* Meio da matriz: pode seguir em todas as direções, exceto voltar linhas.
+* Meio da matriz: pode seguir em todas as direções, exceto voltar linhas (caso geral). 
 * Primeira Coluna: segue somente para direita, para baixo ou para a diagonal inferior direita.
 * Última coluna: segue somente para esquerda, para baixo ou para a diagonal inferior esquerda.
 * Última linha: segue à direita.
