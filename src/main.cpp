@@ -15,7 +15,7 @@ int main() { // declaração de variáveis
   cout<<"Insira a coluna que ira começar a execução: ";
   cin>>y;
   // abrindo o arquivo das matrizes
-  file.open("input.data", std::ios::in);
+  file.open("dataset/input.data", std::ios::in);
   if (!file) {
     cerr << "Não foi possível abrir o arquivo";
     return 0;
