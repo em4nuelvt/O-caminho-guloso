@@ -5,7 +5,7 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 
   1. Criar um sistema que leia K matrizes quadradas no tamanho NxN.
   
-  2. Seu programa deve enumerá-las, de forma a deixa-las organizadas para processamento. 
+  2. O programa deve enumerá-las, de forma a deixa-las organizadas para processamento. 
 
   3. Partindo da primeira matriz, você deve iniciar de um ponto preestabelecido, esse pode ser fornecido pelo usuário ou estar contido em arquivos extras de   configuração. Não é permitido definir diretamente no código. 
 
@@ -21,11 +21,11 @@ Trabalho proposto da disciplina de Algoritmos e Estruturas de Dados I.
 
 
 ## Visão Geral
-Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritmo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a seguinte. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes. Portanto, para as matrizes do problema em questão, voltar linhas da matriz, que seria equivalente a "andar para trás" não é uma opção viável.
+Algoritmo guloso é uma técnica de projetos de algoritmos que visa solucionar problemas a partir de uma solução local, a fim de encontrar uma boa solução global. Dessa maneira, as decisões sao tomadas com base nas informações obtidas na iteração corrente. Neste algoritmo do caminho guloso, a análise local é feita a partir de cada iteração que analisa a posição corrente da matriz e encontra o melhor caminho para a iteração seguinte, sem se preocupar com iterações passadas e todas as iterações que virão, exceto a próxima. Dessa forma, ao fim da execução do algoritmo, cada caminho local converge para a solução global que é a soma dos caminhos das matrizes na posição final da matriz [n-1][n-1]. Portanto, para as matrizes do problema em questão, voltar linhas, que seria equivalente a "andar para trás", não é uma opção viável.
 
 A cada posição de uma matriz, o caminhamento segue um dos casos de movimentação de acordo com a posição que a iteração se encontra:
 
-* Meio da matriz: pode seguir em todas as direções, exceto voltar linhas.
+* Meio da matriz: pode seguir em todas as direções, exceto voltar linhas (caso geral). 
 * Primeira Coluna: segue somente para direita, para baixo ou para a diagonal inferior direita.
 * Última coluna: segue somente para esquerda, para baixo ou para a diagonal inferior esquerda.
 * Última linha: segue à direita.
@@ -47,7 +47,7 @@ A cada posição de uma matriz, o caminhamento segue um dos casos de movimentaç
 Observação: nesse exemplo há somente duas matrizes. Entretanto, o número de matrizes do arquivo de teste não é fixo, pode ser somente uma ou até mesmo milhares.
 
 ## Implementação
-A solução foi implementada em C++ e segue os seguintes passos:
+A solução foi implementada em C++, dividida nos arquivos matrix.hpp (declaração das funções), matrix.cpp(definição das funções) e main.cpp (execução do algoritmo), seguindo os seguintes passos de implementação:
 
 Como o número de matrizes não é estipulado e as dimensões são variáveis, cada matriz lida do arquivo é armazenada temporariamente em uma matriz de números inteiros alocada dinamicamente usando a função malloc(). A dimensão das matrizes está contida na primeira linha do arquivo *input.data*, portanto o espaço de memória alocado depende desse valor que é armazenado nas variáveis: *rows* e *cols*. A leitura é feita a partir de um objeto ifstream importado da biblioteca fstream.
 
@@ -117,7 +117,7 @@ Em cada iteração algoritmo é representado pelos seguintes passos:
 
 ## Compilação e Execução
 
-A estrutura árvore disponibilizada possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
+O projeto possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
 
 
 | Comando                |  Função                                                                                           |                     
